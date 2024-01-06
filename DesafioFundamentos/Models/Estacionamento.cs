@@ -45,11 +45,11 @@ namespace DesafioFundamentos.Models
                 decimal valorTotal = precoInicial + precoPorHora * horas;
                 veiculos.Remove(placa.ToUpper());
               
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+                Console.WriteLine($"O veículo selecionado de placa {placa} foi removido com sucesso, e o preço total foi de: R$ {valorTotal}");
             }
             else
             {
-                Console.WriteLine("Placa não localizada, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
+                Console.WriteLine("Veículo não localizado.Confira se digitou a placa corretamente");
             }
         }
 
